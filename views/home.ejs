@@ -1,0 +1,22 @@
+<%- include('partials/header'); -%>
+
+
+<h1>Home</h1>
+<p> <%=  para %> </p>
+<% post.forEach(function(posts) { %>
+    <div>
+        <h3> <%=  posts.title %> </h3>
+        <p> 
+            <%=  posts.journal.substring(0, 100)+ " ..." %> 
+            <a href="/posts/<%=posts.title%>">Read More</a> 
+        </p>
+    </div>
+      <% }) %>
+      <form action="/compose">
+      <button type="submit" class="custom-btn btn-16">Add a new chapter</button>
+    </form>
+    
+<%- include('partials/footer'); -%>
+
+
+

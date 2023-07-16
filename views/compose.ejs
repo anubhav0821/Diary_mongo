@@ -1,0 +1,21 @@
+<%- include('partials/header'); -%>
+
+
+<h1>Compose</h1>
+
+<form action="/compose" method="post">
+    <div class="form-floating mt-4">
+        <p class="mb-0" style="font-size: 20px;">Title</p>
+        <input class="form-control mb-2" placeholder="Leave a comment here" name="post_title" type="text" autocomplete="off">
+        
+        <p class="mb-0" style="font-size: 20px;">Compose</p>
+        <textarea class="form-control" placeholder="Leave a comment here" name="post_content" style="height: 100px"></textarea>
+        
+      </div>
+      <button type="submit" class="custom-btn btn-16">Add to diary</button>
+  
+</form>
+
+<%- include('partials/footer'); -%>
+
+
